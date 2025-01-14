@@ -1,18 +1,37 @@
-## Getting Started
+# Singly Linked List Implementation in Java
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+This repository contains a simple Java implementation of a Singly Linked List with various operations like insertion, deletion, and displaying the list. The program is interactive and presents a menu-driven interface where users can perform various linked list operations from the console.
 
-## Folder Structure
+## Features
 
-The workspace contains two folders by default, where:
+- **Insert at the Beginning**: Insert a new node at the start of the list.
+- **Insert at the End**: Insert a new node at the end of the list.
+- **Insert at a Specific Position**: Insert a new node at a specified position.
+- **Delete a Node**: Delete a node based on its value.
+- **Display the List**: Display the entire linked list.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## Data Structure
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+The linked list is implemented using a custom `LinkedList` class and a `Node` class:
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+### `Node` Class
+- **data**: Stores the value for the node.
+- **next**: A reference to the next node in the list.
 
-## Dependency Management
+### `LinkedList` Class
+- **head**: A reference to the first node of the list.
+- The `LinkedList` class contains the following methods:
+  - `insertAtBeginning(int value)`: Inserts a new node at the beginning of the list.
+  - `insertAtEnd(int value)`: Inserts a new node at the end of the list.
+  - `insertAtPosition(int value, int pos)`: Inserts a new node at the specified position.
+  - `deleteNode(int value)`: Deletes a node with the given value.
+  - `display()`: Displays all nodes in the list.
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+## How to Use
+
+### Clone the Repository
+
+Clone the repository to your local machine using the following command:
+
+```bash
+git clone https://github.com/EnzoLeman/SinglyLinkedList.git
